@@ -60,20 +60,20 @@ WSGI_APPLICATION = 'books.wsgi.application'
 
 # Database
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'books_db',
-        'USER': 'books_user',
-        'PASSWORD': '1234',
-        'HOST': 'localhost',
-        'PORT': '',
-    }, 
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'books_db',
+    #     'USER': 'books_user',
+    #     'PASSWORD': '1234',
+    #     'HOST': 'localhost',
+    #     'PORT': '',
+    # }, 
 
     # for Testing
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': 'mydatabase',
-    # }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+    }
 }
 
 AUTHENTICATION_BACKENDS = (
